@@ -32,7 +32,7 @@ export const query = graphql`
   query lessonQuery($slug: String!) {
     contentfulLesson(slug: { eq: $slug }) {
       title
-      bodyText {
+      body {
         json
       }
       seo {
