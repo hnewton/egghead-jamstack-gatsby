@@ -13,7 +13,7 @@ function Lesson({ data }) {
       />
       <div className="lesson__details">
         <h2 className="text-4xl">{data.contentfulLesson.title}</h2>
-        {documentToReactComponents(data.contentfulLesson.body.json, {
+        {documentToReactComponents(data.contentfulLesson.bodyText.json, {
           renderNode: {
             [BLOCKS.HEADING_2]: (node, children) => (
               <h2 className="text-4xl">{children}</h2>

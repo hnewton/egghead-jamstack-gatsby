@@ -19,10 +19,6 @@ function Instructor({ data }) {
             width: "100%", // important for respect the flexing
             maxWidth: "200px",
           }}
-          resolutions={{
-            ...data.contentfulInstructor.avatar.resolutions,
-            base64: data.contentfulInstructor.avatar.sqip.dataURI,
-          }}
           alt={data.contentfulInstructor.fullName}
         />
 
